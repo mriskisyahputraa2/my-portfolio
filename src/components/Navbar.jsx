@@ -1,5 +1,5 @@
 import { useState } from "react";
-import logo from "../assets/logo.png";
+import logo from "../assets/logo-2.png";
 import { NAVIGATION_LINKS } from "../constants";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
@@ -37,9 +37,9 @@ export default function Navbar() {
           <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-lg border border-stone-50/30 bg-black/20 py-3 backdrop-blur-lg lg:flex">
             <div className="flex items-center justify-between gap-6">
               {/* Navbar Logo */}
-              <div className="mr-7">
+              <div className="mr-4">
                 <a href="#">
-                  <img src={logo} width={150} alt="Muhammad Rizki Syahputra" />
+                  <img src={logo} width={80} alt="Muhammad Rizki Syahputra" />
                 </a>
               </div>
             </div>
@@ -71,7 +71,7 @@ export default function Navbar() {
                   <img
                     src={logo}
                     alt="Muhammad Rizki Syahputra"
-                    width={90}
+                    width={70}
                     className="m-2"
                   />
                 </a>

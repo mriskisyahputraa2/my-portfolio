@@ -1,5 +1,5 @@
 import { HERO } from "../constants/index";
-import rizkiImg from "../assets/rizki.jpg";
+import rizkiImg from "../assets/rizki-.jpg";
 
 export default function Hero() {
   return (
