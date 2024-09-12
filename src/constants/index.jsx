@@ -34,7 +34,7 @@ export const HERO = {
   name: "Muhammad Rizki Syahputra",
   greet: "Hello there! 👋🏻",
   description:
-    "I am a passionate frontend developer with a knack for creating beautiful and functional user interfaces. I like transforming ideas into engaging web experiences for over a decade.",
+    "I am a Full-Stack Developer with a background in Network Computer Engineering Technology. With expertise in both frontend and backend, I focus on developing innovative and efficient digital solutions. My experience spans from creating responsive user interfaces to managing reliable server infrastructure, keeping me passionate about utilizing technology to create impactful solutions.",
 };
 
 export const PROJECTS = [
