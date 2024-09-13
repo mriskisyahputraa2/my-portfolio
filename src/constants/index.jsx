@@ -16,10 +16,16 @@ import projectImage6 from "../assets/project6.jpeg";
 
 import { RiReactjsLine } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb } from "react-icons/si";
+import { SiMongodb, SiReact } from "react-icons/si";
 import { DiRedis } from "react-icons/di";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
+import { RiJavascriptFill } from "react-icons/ri";
+import { SiPhp } from "react-icons/si";
+import { SiLaravel } from "react-icons/si";
+import { FaVuejs } from "react-icons/fa";
+import { SiExpress } from "react-icons/si";
+import { SiMysql } from "react-icons/si";
 
 export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
@@ -94,30 +100,51 @@ export const ABOUT = [
 
 export const SKILLS = [
   {
-    icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
-    name: "React",
+    icon: <RiJavascriptFill className="text-4xl text-yellow-400 lg:text-5xl" />,
+    name: "JavaScript",
     experience: "2+ years",
   },
   {
-    icon: <TbBrandNextjs className="text-4xl text-white lg:text-5xl" />,
-    name: "Next.js",
-    experience: "1+ year",
+    icon: <SiPhp className="text-4xl text-[#484C89] lg:text-5xl" />,
+    name: "PHP",
+    experience: "2+ years",
   },
   {
-    icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
-    name: "MongoDB",
-    experience: "1.5+ years",
+    icon: <SiLaravel className="text-4xl text-[#fb503b] lg:text-5xl" />,
+    name: "Laravel",
+    experience: "1+ years",
   },
   {
-    icon: <DiRedis className="text-4xl text-red-600 lg:text-5xl" />,
-    name: "Redis",
-    experience: "1+ year",
+    icon: <SiExpress className="text-4xl text-white lg:text-5xl" />,
+    name: "Express.js",
+    experience: "1+ years",
+  },
+  {
+    icon: <RiReactjsLine className="text-4xl text-cyan-400 lg:text-5xl" />,
+    name: "React",
+    experience: "1+ years",
+  },
+  {
+    icon: <FaVuejs className="text-4xl text-[#42b883] lg:text-5xl" />,
+    name: "Vue.js",
+    experience: "1+ years",
   },
   {
     icon: <FaNodeJs className="text-4xl text-green-600 lg:text-5xl" />,
     name: "Node.js",
+    experience: "1+ years",
+  },
+  {
+    icon: <SiMysql className="text-4xl text-[#f29111] lg:text-5xl" />,
+    name: "Mysql",
     experience: "2+ years",
   },
+  {
+    icon: <SiMongodb className="text-4xl text-green-600 lg:text-5xl" />,
+    name: "MongoDB",
+    experience: "1+ years",
+  },
+
   {
     icon: <BiLogoPostgresql className="text-4xl text-sky-700 lg:text-5xl" />,
     name: "PostgreSQL",

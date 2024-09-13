@@ -2,6 +2,7 @@ import About from "./components/About";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
+import Skills from "./components/Skills";
 
 export default function App() {
   return (
@@ -20,6 +21,9 @@ export default function App() {
 
           {/* Project */}
           <Projects />
+
+          {/* Skill */}
+          <Skills />
         </div>
       </div>
     </>
