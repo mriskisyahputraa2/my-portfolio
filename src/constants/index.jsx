@@ -23,9 +23,9 @@ import { BiLogoPostgresql } from "react-icons/bi";
 
 export const NAVIGATION_LINKS = [
   { label: "About", href: "#about" },
-  { label: "Education", href: "#education" },
-  { label: "Work Experience", href: "#w ork" },
   { label: "Projects", href: "#projects" },
+  { label: "Work Experience", href: "#w ork" },
+  { label: "Education", href: "#education" },
   { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
 ];
@@ -34,7 +34,7 @@ export const HERO = {
   name: "Muhammad Rizki Syahputra",
   greet: "Hello there! 👋🏻",
   description:
-    "I am a Full-Stack Developer with a background in Network Computer Engineering Technology. With expertise in both frontend and backend, I focus on developing innovative and efficient digital solutions. My experience spans from creating responsive user interfaces to managing reliable server infrastructure, keeping me passionate about utilizing technology to create impactful solutions.",
+    "I am a Full-Stack Developer with a background in Network Computer Engineering Technology, with expertise in frontend and backend. I focus on developing innovative digital solutions, from responsive user interfaces to reliable server infrastructure, to create impactful solutions.",
 };
 
 export const PROJECTS = [
@@ -88,10 +88,8 @@ export const PROJECTS = [
   },
 ];
 
-export const BIO = [
-  "Carl Frank studied computer science at the University of Technology,from which he graduated in 2010. Following his education, he honed his craft and expertise over the course of 10 years at Tech Innovations Inc., where he immersed himself in the world of frontend development.",
-  "In 2021, driven by a shared vision for innovative web solutions and a passion for creating extraordinary user experiences Carl Frank co-founded WebArtistry alongside his creative partner, Jane Doe. Together, they set out to redefine frontend development, infusing their projects with creativity and cutting-edge technology.",
-  "As a multi-disciplinary frontend developer, Carl Frank brings a wealth of skills and expertise to his work. From his deep understanding of HTML, CSS, and JavaScript to his proficiency in modern frameworks like React and Vue.js, Carl Frank possesses a versatile skill set that allows him to craft stunning and unforgettable web experiences for his clients and audiences alike.",
+export const ABOUT = [
+  "I am a Full-Stack Developer currently studying at Politeknik Negeri Lhokseumawe, majoring in Network Computer Engineering Technology. Armed with expertise in various technologies such as JavaScript, PHP, Laravel, Express.js, React.js, Vue.js, and Node.js, I am able to develop applications from frontend to backend. In addition, I also mastered database management such as MySQL, PostgreSQL, and MongoDB. My interest in the world of technology encourages me to always learn, innovate, and bring efficient and user-friendly solutions in every project I work on.",
 ];
 
 export const SKILLS = [
