@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
+import WorkExperience from "./components/WorkExperience";
 
 export default function App() {
   return (
@@ -16,14 +17,17 @@ export default function App() {
           {/* hero section */}
           <Hero />
 
-          {/* About */}
-          <About />
-
           {/* Project */}
           <Projects />
 
+          {/* About */}
+          <About />
+
           {/* Skill */}
           <Skills />
+
+          {/* Work Experience */}
+          <WorkExperience />
         </div>
       </div>
     </>

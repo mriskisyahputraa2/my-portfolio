@@ -28,11 +28,11 @@ import { SiExpress } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 
 export const NAVIGATION_LINKS = [
-  { label: "About", href: "#about" },
   { label: "Projects", href: "#projects" },
-  { label: "Work Experience", href: "#w ork" },
-  { label: "Education", href: "#education" },
+  { label: "About", href: "#about" },
   { label: "Skills", href: "#skills" },
+  { label: "Work Experience", href: "#work" },
+  { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
 
