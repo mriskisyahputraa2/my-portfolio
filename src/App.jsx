@@ -1,4 +1,5 @@
 import About from "./components/About";
+import EducationSection from "./components/EducationSection";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
@@ -28,6 +29,9 @@ export default function App() {
 
           {/* Work Experience */}
           <WorkExperience />
+
+          {/* Educations Sections */}
+          <EducationSection />
         </div>
       </div>
     </>
