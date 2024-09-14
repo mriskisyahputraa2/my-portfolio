@@ -1,4 +1,5 @@
 import About from "./components/About";
+import ContactForm from "./components/ContactForm";
 import EducationSection from "./components/EducationSection";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -32,6 +33,9 @@ export default function App() {
 
           {/* Educations Sections */}
           <EducationSection />
+
+          {/* Contact Form */}
+          <ContactForm />
         </div>
       </div>
     </>
