@@ -2,6 +2,7 @@ import { useState } from "react";
 import emailjs from "@emailjs/browser"; // library untuk mengirim email
 import toast, { Toaster } from "react-hot-toast";
 import { FiSend } from "react-icons/fi";
+import { motion } from "framer-motion";
 
 export default function ContactForm() {
   // state untuk menyimpan data name, email dan message
@@ -99,7 +100,12 @@ export default function ContactForm() {
         <h2 className="my-8 text-center text-4xl font-semibold tracking-tighter">
           Let's Connect
         </h2>
-        <form onSubmit={handleSubmit}>
+        <motion.form
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.7 }}
+          onSubmit={handleSubmit}
+        >
           <div className="mb-4 flex space-x-4">
             {/* input name */}
             <div className="lg:w-1/2">
@@ -115,7 +121,13 @@ export default function ContactForm() {
 
               {/* message error name */}
               {errors.name && (
-                <p className="text-sm text-rose-800">{errors.name}</p>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  className="text-sm text-rose-800"
+                >
+                  {errors.name}
+                </motion.p>
               )}
             </div>
 
@@ -133,7 +145,13 @@ export default function ContactForm() {
 
               {/* message error email */}
               {errors.email && (
-                <p className="text-sm text-rose-800">{errors.email}</p>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  className="text-sm text-rose-800"
+                >
+                  {errors.email}
+                </motion.p>
               )}
             </div>
           </div>
@@ -151,7 +169,13 @@ export default function ContactForm() {
 
             {/* message error message */}
             {errors.message && (
-              <p className="text-sm text-rose-800">{errors.message}</p>
+              <motion.p
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                className="text-sm text-rose-800"
+              >
+                {errors.message}
+              </motion.p>
             )}
           </div>
 
@@ -168,7 +192,7 @@ export default function ContactForm() {
               {isSending ? "Sending..." : "Send"} <FiSend />
             </div>
           </button>
-        </form>
+        </motion.form>
       </div>
     </>
   );
