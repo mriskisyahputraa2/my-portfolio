@@ -1,18 +1,23 @@
 import { useState } from "react";
-import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser"; // library untuk mengirim email
 import toast, { Toaster } from "react-hot-toast";
 import { FiSend } from "react-icons/fi";
 
 export default function ContactForm() {
+  // state untuk menyimpan data name, email dan message
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
 
+  // state untuk menyimpan pesan errors
   const [errors, setErrors] = useState({});
+
+  // state untuk menunjukkan apakah pesan sedang dikirim atau tidak
   const [isSending, setIsSending] = useState(false);
 
+  // fungsi ini untuk meng-update formData ketika pengguna mengetik sesuatu di input form
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData({
@@ -21,6 +26,7 @@ export default function ContactForm() {
     });
   };
 
+  // fungsi ini untuk melakukan validasi sebelum data dikirim
   const validate = () => {
     let errors = {};
     // validasi name
@@ -29,6 +35,8 @@ export default function ContactForm() {
     // validasi email
     if (!formData.email) {
       errors.email = "Email is required";
+
+      // jika email tidak dalam format yang benar, muncul "Email is invalid".
     } else if (!/\S+@\S+\.\S+/.test(formData.email)) {
       errors.email = "Email is invalid";
     }
@@ -40,17 +48,23 @@ export default function ContactForm() {
     return errors;
   };
 
+  // fungsi ini untuk menangani ketika pengguna menekan tombol "kirim"
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    // inisialisasi validasi terhadap data form
     const validationErrors = validate();
 
+    // jika terdapat error pada validasi, tampilkan pesan errors
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
+
+      // jika tidak ada error
     } else {
       setErrors({});
       setIsSending(true);
 
+      // fungsi emailjs.send dipanggil untuk mengirim data form ke EmailJS.
       emailjs
         .send(
           "service_95tk1vi",
@@ -58,14 +72,20 @@ export default function ContactForm() {
           formData,
           "m3dXp0EkJyQFOfNBE"
         )
+
+        // response jika berhail
         .then((response) => {
           toast.success("Message sent successfully");
           setFormData({ name: "", email: "", message: "" });
         })
+
+        // response jika gagal
         .catch((error) => {
           console.log("FAILED...", error);
           toast.error("Failed to send message. Please try again later.");
         })
+
+        // finally untuk memastikan tombol kembali aktif setelah proses selesai
         .finally(() => {
           setIsSending(false);
         });
@@ -143,6 +163,7 @@ export default function ContactForm() {
             }`}
             disabled={isSending}
           >
+            {/* tombol "Send" akan berubah menjadi "Sending..." saat proses pengiriman berlangsung  */}
             <div className="flex items-center justify-center gap-2">
               {isSending ? "Sending..." : "Send"} <FiSend />
             </div>
