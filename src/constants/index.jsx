@@ -15,9 +15,7 @@ import projectImage5 from "../assets/project5.jpeg";
 import projectImage6 from "../assets/project6.jpeg";
 
 import { RiReactjsLine } from "react-icons/ri";
-import { TbBrandNextjs } from "react-icons/tb";
-import { SiMongodb, SiReact } from "react-icons/si";
-import { DiRedis } from "react-icons/di";
+import { SiMongodb } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { RiJavascriptFill } from "react-icons/ri";
@@ -50,23 +48,23 @@ export const PROJECTS = [
     description:
       "A personal portfolio website built with React and Tailwind CSS to showcase my skills, projects, and contact information.",
     image: projectImage1,
-    githubLink: "https://github.com/user/personal-portfolio",
+    githubLink: "https://github.com/mriskisyahputraa2/my-portfolio",
   },
   {
     id: 2,
     name: "E-Commerce Platform",
     description:
-      "An e-commerce web application developed using Next.js and Stripe for payment integration, featuring a comprehensive product catalog, shopping cart, and checkout system.",
+      "An e-commerce web application developed using React.js, Redux and using APIs is equipped with a comprehensive product catalog, shopping cart, and payment system.",
     image: projectImage2,
-    githubLink: "https://github.com/user/ecommerce-platform",
+    githubLink: "https://github.com/mriskisyahputraa2/deploy-shopping-cart",
   },
   {
     id: 3,
     name: "Task Management Tool",
     description:
-      "A task management application built with React and Redux for efficient task tracking and team collaboration, including features like project boards, task assignment, and progress tracking.",
+      "A task management app built with React, Redux and using MongoDB database for efficient task tracking and team collaboration, including features such as project boards, task assignment, and progress tracking.",
     image: projectImage3,
-    githubLink: "https://github.com/user/task-management-tool",
+    githubLink: "https://github.com/mriskisyahputraa2/MEARN-NoteApp",
   },
   {
     id: 4,
@@ -74,15 +72,15 @@ export const PROJECTS = [
     description:
       "A weather application that uses the OpenWeatherMap API to fetch and display current weather data and forecasts for various locations, built with React and styled-components.",
     image: projectImage4,
-    githubLink: "https://github.com/user/weather-app",
+    githubLink: "https://github.com/mriskisyahputraa2/Weather-ReactApp",
   },
   {
     id: 5,
     name: "Blog Platform",
     description:
-      "A blogging platform developed with Next.js and Markdown for creating, editing, and publishing blog posts. It features a rich text editor, tag system, and user authentication.",
+      "A blogging platform developed with React.js, Redux, Express.js and using MongoDB and Markdown database to create, edit and publish blog posts. Comes with a rich text editor, tag system, and user authentication.",
     image: projectImage5,
-    githubLink: "https://github.com/user/blog-platform",
+    githubLink: "https://github.com/mriskisyahputraa2/mearn-app-blog",
   },
   {
     id: 6,
